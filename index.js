@@ -12,7 +12,8 @@ const logFormat = printf(({ level, message, label, timestamp }) => {
   return `${timestamp} [${label}] ${level}: ${message}`;
 });
 
-global.gradesFileJSON = "grades.json";
+const gradesFile = path.join(process.cwd(), 'grades.json');
+global.gradesFileJSON = gradesFile;
 global.logger = winston.createLogger({
   level: "silly",
   transports: [
