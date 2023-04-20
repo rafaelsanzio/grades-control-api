@@ -1,9 +1,10 @@
 {
   "version": 2,
+  "name": "grades-control-api",
   "builds": [
     {
       "src": "index.js",
-      "use": "@now/node"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
