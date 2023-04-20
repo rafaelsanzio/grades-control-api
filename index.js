@@ -27,7 +27,7 @@ global.logger = winston.createLogger({
 });
 
 app.use(express.json());
-app.use("/api/grades", grades);
+app.use("/grades", grades);
 
 app.listen(3000, async () => {
   try {
